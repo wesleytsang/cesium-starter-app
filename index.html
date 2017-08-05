@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Cesium Starter App</title>
+  <title>LatLngPlotter</title>
   <script src="ThirdParty/Cesium/Cesium.js"></script>
   <style>
       @import url(ThirdParty/Cesium/Widgets/widgets.css);
@@ -11,6 +11,11 @@
   </style>
 </head>
 <body>
+  Lat:
+  <input id=lat type="text"></input>
+  Lng:
+  <input id=lng type="text"></input>
+  <button onclick="maker()">Plot</button>
   <div id="cesiumContainer"></div>
   <script src="Source/App.js"></script>
 </body>
