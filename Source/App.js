@@ -1,4 +1,4 @@
-var cesiumWidget = new Cesium.Viewer('cesiumContainer');
+var viewer = new Cesium.Viewer('cesiumContainer');
 
 function maker() {
     var lat = document.getElementById("lat").value
