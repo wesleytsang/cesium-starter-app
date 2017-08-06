@@ -7,15 +7,39 @@
       @import url(ThirdParty/Cesium/Widgets/widgets.css);
       html, body, #cesiumContainer {
           width: 100%; height: 100%; margin: 0; padding: 0; overflow: hidden;
+          display: flex;
+      }
+      .custom {
+        text-align: center;
+        width: 350px;
+      }
+      .row {
+        margin: auto;
+        margin-top: 20px;
+      }
+      button {
+        width: 60%;
+        background-color: transparent;
+        border: solid 2px #4286f4;
+        color: #4286f4;
+        font-weight: 700;
+      }
+      button:hover {
+        background-color: #4286f4;
+        color: white;
       }
   </style>
 </head>
 <body>
-  Lat:
-  <input id=lat type="text"></input>
-  Lng:
-  <input id=lng type="text"></input>
-  <button onclick="maker()">Plot</button>
+  <div class="custom">
+    <div class="row">
+      Lat:  <input id=lat type="text"></input><br>
+    </div>
+    <div class="row">
+    Lng:  <input id=lng type="text"></input><br>
+    </div>
+    <button class="row" onclick="maker()">Plot</button>
+  </div>
   <div id="cesiumContainer"></div>
   <script src="Source/App.js"></script>
 </body>
